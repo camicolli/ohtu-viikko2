@@ -6,12 +6,12 @@ import java.util.Iterator;
 import java.util.List;
 
 public class Statistics {
-    private Readeri r;
+    private Readeri reader;
     private List<Player> players;
 
     public Statistics(Readeri rajapinta) {
-        r=rajapinta;
-        PlayerReader reader = new PlayerReader("http://nhlstatistics.herokuapp.com/players.txt");
+        reader=rajapinta;
+//        PlayerReader reader = new PlayerReader("http://nhlstatistics.herokuapp.com/players.txt");
         players = reader.getPlayers();       
     }
 
