@@ -42,7 +42,25 @@ public class StatisticsTest {
     public void setUp(){
         // luodaan Staatistics-olio joka käyttää "stubia"
         stats = new Statistics(readerStub);
-    }  
+    }@Test
+    public void oikeaNimenHakuToimii(){
+        String nimi="Semenko";
+       assertEquals("Semenko", stats.search(nimi).getName());
+    }@Test
+    public void vaaraNimenHakuToimii(){
+        String nimi="Vaara";
+        assertEquals(null, stats.search(nimi));
+    }@Test
+    public void oikeaTiimiLoytyy(){
+      String tiimi="PIT";  
+      assertEquals(1, stats.team(tiimi).size());
+              
+    }@Test
+    public void huippuTulosToimii(){
+        int maara=2;
+        assertEquals(3,stats.topScorers(maara).size());
+    }
+   
 }
   
    
