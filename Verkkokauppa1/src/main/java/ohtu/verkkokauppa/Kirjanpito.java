@@ -3,6 +3,7 @@ package ohtu.verkkokauppa;
 
 import java.util.ArrayList;
 
+
 public class Kirjanpito implements KirjanpitoRajapinta{
 //    private static Kirjanpito instance;
     

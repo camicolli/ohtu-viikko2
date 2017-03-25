@@ -1,5 +1,6 @@
 package ohtu.verkkokauppa;
 
+
 public class Kauppa {
 
     private VarastoRajapinta varasto;
@@ -8,6 +9,7 @@ public class Kauppa {
     private ViitegeneraattoriRajapinta viitegeneraattori;
     private String kaupanTili;
 
+    
     public Kauppa( VarastoRajapinta varasto,PankkiRajapinta pankki, ViitegeneraattoriRajapinta viitegeneraattori) {
         this.varasto = varasto;
         this.pankki = pankki;

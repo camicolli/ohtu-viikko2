@@ -1,5 +1,6 @@
 package ohtu.verkkokauppa;
 
+
 public class Viitegeneraattori implements ViitegeneraattoriRajapinta {
 
 //    private static Viitegeneraattori instanssi;
