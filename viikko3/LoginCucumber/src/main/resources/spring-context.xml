@@ -19,7 +19,7 @@
         
     </bean>
     <bean id="fileuserdao" class="ohtu.data_access.FileUserDAO">
-    <constructor-arg type="java.lang.String" value="testfile.txt"/>
+    <constructor-arg type="java.lang.String" value="textfile.txt"/>
     </bean> 
            
     <bean id="authenticationservice" class="ohtu.services.AuthenticationService">

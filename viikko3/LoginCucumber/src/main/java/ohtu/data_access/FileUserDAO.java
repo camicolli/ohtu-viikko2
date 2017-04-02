@@ -31,7 +31,7 @@ public class FileUserDAO implements UserDao {
   public FileUserDAO(String filename) {
     users = new ArrayList();
     File file = new File(filename);
-    add(new User("jaakko","salainen1"));
+    add(new User("petteri","salainen1"));
     try {
       reader = new Scanner(file);
       readFile();
