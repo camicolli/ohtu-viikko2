@@ -3,3 +3,6 @@
 *build/
 /.nb-gradle/
 *gradle.properties
+/ohtu-viikko3/.nb-gradle/
+/viikko3/HelloCucumber/.nb-gradle/
+/viikko3/LoginCucumber/.nb-gradle/
