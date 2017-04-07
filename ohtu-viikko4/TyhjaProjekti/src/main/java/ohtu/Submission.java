@@ -180,7 +180,6 @@ public class Submission {
       }
       return a12;
     } public void setLectureCourse(LectureCourse course) {
-      System.out.println("LOOL");
       this.course = course;
     }
 
