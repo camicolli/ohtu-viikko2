@@ -27,11 +27,11 @@ public class AuthenticationService {
         CreationStatus status = new CreationStatus();
         
         if (userDao.findByName(username) != null) {
-            status.addError("username is already taken");
+            status.addError("username already taken");
         }
 
         if (username.length()<3 ) {
-            status.addError("username should have at least 3 characters");
+            status.addError("username should be 3 characters or more");
         }
 
         if (status.isOk()) {

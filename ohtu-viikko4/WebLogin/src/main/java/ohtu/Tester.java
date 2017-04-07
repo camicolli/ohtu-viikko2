@@ -5,13 +5,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+
 public class Tester {
 
     public static void main(String[] args) {
+
         WebDriver driver = new ChromeDriver();
 
         driver.get("http://localhost:4567");
-        
         sleep(2);
         
         WebElement element = driver.findElement(By.linkText("login"));
@@ -27,9 +28,7 @@ public class Tester {
         
         sleep(2);
         element.submit();
-
         sleep(3);
-        
         driver.quit();
     }
     
