@@ -16,7 +16,7 @@ public class Tester {
         logIn("pekka","akkep");
         //oikea nimi, väärä salasana
         logIn("pekka","vaaraSalasana");
-        //kumipin on väärin
+        //kumpkin on väärin
         logIn("Tallaista","eiOle");
         register("luodaan","uusiKayttaja","uusiKayttaja");
         registerAndLogOut("username","password");
