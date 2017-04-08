@@ -20,12 +20,12 @@ Feature: A new user account can be created if a proper unused username and passw
         When username "TamaToimii" and password "eiolenumeroita" and confirmation "eiolenumeroita" are given
         Then user is not created and error "password has to have other characters than letters" is reported
 
-    Scenario: creation fails with already taken username and valid pasword
+    Scenario: creation fails with already taken username and valid password
         Given new user is selected
-        When  username "jukka" and password "salasana1" and  confirmation "salasana1" are given
+        When  username "jukka" and password "jokusalainen1" and confirmation "jokusalasana1" are given
         Then user is not created and error "username is already taken" is reported
 
      Scenario: creation fails when password and password confirmation do not match
         Given new user is selected
-        When  username "eitoimi" and password "salasana1" and  confirmation "eitasmaaekaa1" are given
+        When  username "eitoimi" and password "salasana1" and confirmation "eitasmaaekaa1" are given
         Then user is not created and error "password and confirmation do not match" is reported
