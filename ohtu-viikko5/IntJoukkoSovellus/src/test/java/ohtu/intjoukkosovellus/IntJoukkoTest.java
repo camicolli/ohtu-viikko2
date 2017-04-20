@@ -86,5 +86,8 @@ public class IntJoukkoTest {
     public void toStringToimiiTyhjallaJoukolla(){
         joukko = new IntJoukko();
         assertEquals("{}", joukko.toString());
-    }     
+    }@Test
+    public void olematontaEipoisteta(){
+        assertEquals(false,joukko.poista(5));
+    }
 }
