@@ -1,7 +1,10 @@
 package ohtu;
 
+import java.util.HashMap;
+
 public class TennisGame {
-    
+
+    private HashMap<Integer, String> pointToText;
     private int m_score1 = 0;
     private int m_score2 = 0;
     private String player1Name;
@@ -10,71 +13,49 @@ public class TennisGame {
     public TennisGame(String player1Name, String player2Name) {
         this.player1Name = player1Name;
         this.player2Name = player2Name;
+        pointToText.put(0, "Love");
+        pointToText.put(1, "Fifteen");
+        pointToText.put(2, "Thirty");
+        pointToText.put(3, "Forty");
     }
 
     public void wonPoint(String playerName) {
-        if (playerName == "player1")
-            m_score1 += 1;
-        else
-            m_score2 += 1;
+        if (playerName.equals(player1Name)) {
+            m_score1++;
+        } else if(playerName.equals(player2Name)){
+            m_score2++;
+        }
+    }
+
+    public String resultCounter() {
+        int result = m_score1 - m_score2;
+        if (result == 1) {
+            return "Advantage " + player1Name;
+        }
+        if (result == -1) {
+            return "Advantage " + player2Name;
+        }
+        if (result >= 2) {
+            return "Win for " + player1Name;
+        }
+
+        return "Win for " + player2Name;
+
     }
 
     public String getScore() {
-        String score = "";
-        int tempScore=0;
-        if (m_score1==m_score2)
-        {
-            switch (m_score1)
-            {
-                case 0:
-                        score = "Love-All";
-                    break;
-                case 1:
-                        score = "Fifteen-All";
-                    break;
-                case 2:
-                        score = "Thirty-All";
-                    break;
-                case 3:
-                        score = "Forty-All";
-                    break;
-                default:
-                        score = "Deuce";
-                    break;
-                
+
+        if (m_score1 == m_score2) {
+            if (m_score1 < 4) {
+                return pointToText.get(m_score1) + "-All";
             }
+            return "Deuce";
+        
+        } else if (m_score1 >= 4 || m_score2 >= 4) {
+            return resultCounter();
+
         }
-        else if (m_score1>=4 || m_score2>=4)
-        {
-            int minusResult = m_score1-m_score2;
-            if (minusResult==1) score ="Advantage player1";
-            else if (minusResult ==-1) score ="Advantage player2";
-            else if (minusResult>=2) score = "Win for player1";
-            else score ="Win for player2";
-        }
-        else
-        {
-            for (int i=1; i<3; i++)
-            {
-                if (i==1) tempScore = m_score1;
-                else { score+="-"; tempScore = m_score2;}
-                switch(tempScore)
-                {
-                    case 0:
-                        score+="Love";
-                        break;
-                    case 1:
-                        score+="Fifteen";
-                        break;
-                    case 2:
-                        score+="Thirty";
-                        break;
-                    case 3:
-                        score+="Forty";
-                        break;
-                }
-            }
-        }
-        return score;
+        return pointToText.get(m_score1) + "-" + pointToText.get(m_score2);
+
     }
 }
