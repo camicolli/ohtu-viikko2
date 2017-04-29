@@ -4,7 +4,7 @@ package statistics.matcher;
 import statistics.Player;
 
 public class PlaysIn implements Matcher {
-    private String team;
+         private String team;
 
     public PlaysIn(String team) {
         this.team = team;
@@ -13,6 +13,6 @@ public class PlaysIn implements Matcher {
     @Override
     public boolean matches(Player p) {
         return p.getTeam().contains(team);
-    }
+}
     
 }

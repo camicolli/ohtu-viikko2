@@ -23,7 +23,7 @@ public class HasAtLeast implements Matcher {
             
         } catch (Exception ex) {
             System.out.println(ex);
-            throw new IllegalStateException("Player does not have field "+fieldName.substring(3, fieldName.length()).toLowerCase());
+            throw new IllegalStateException("Player does not have fields: "+fieldName.substring(3, fieldName.length()).toLowerCase());
         }       
         
     }    
