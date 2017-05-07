@@ -1,0 +1,20 @@
+Kalle Ilveksen kandidaattityö Scrumban-menetelmän käyttö ketterässä ohjelmistokehityksessä, (referaatti)
+
+1.
+Johdanto käy läpi sitä miten Srcum, Kanban ja niiden yhdistelmä Scrumban on saanut suosiota 2000 luvulla ja miten vesiputousmallin suosio on laskenut. Johdanto esittelee aiheekseen Scrumin, Kanbanin ja niin yhdisteen Scrumbanin sekä niihin liittyvät ongelmat.
+
+2.1
+Kappaleessa käydään läpi ohjelmistokehitystä ketterissä menetelmissä. Arvopaino on yksilöillä, toimivalla ohjelmistolla, asikasyhteistöllä ja reagoimisella muutoksiin.
+
+2.2
+Käydään läpi Scrumia. Aloitus kertoo scrumin taustaa ja historiaa 1990-luvulta. Kappaleessa lisäksi tuodaan esiin vesiputousmallin ongelmia ja mtien scrum heijastettuna siihen ratkaisee ongelmia. Sitten siirrytään käsittelemään scrumin rakennetta, miten se jakautuu sprintteihin ja miten tärkeässä asemassa ovat itse developerit. Kaikilla tulisi olla jatkuvasti tiedossa missä tilassa projekti on. 
+
+2.3
+
+Kappale käsittelee Kanbania. Alussa käydään läpi sen historiaa ja siirrytään sen rakenteeseen ja scrumin kanssa vertailuun.  Kanbanissa ei ole iteraatioita, vaan tiimi keskustelee keskenään toteutettavista featureista ja milloin joku on valmis tuotantoon vietäväksi. Scrumilla ja kanbanilla on se yhteistä että molemmissa arvioidaan featuren toetutustuntimäärä ja seurataan progressiota listoilta. Asiakas saa myös lisätä listalle lisää vaatimuksia.
+
+Siirrymme viimeiseksi tarkasteleaan Scrumbania. Scrumbanissa yhdistetään Scrumin ja Kanbanin piirteitä. Scrumin heikkoutena Kanbaniin on sprintti, joka voi haitata tiimin tuottavuutta. Kanban antaa taas tiimille liikaa vapauksia: Sprinttiä, jonka tavoitteena on shippable product ei ole määritelty!
+
+
+
+
